@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva tu Turno en la Barbería</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Reserva tu Turno en la Barbería</h1>
+            <img src="https://www.wahlpro.com/media/wysiwyg/wahlpro/advanced-barbering-seminar/wahl-advanced-seminar-banner.png" alt="Barbería Barber Pro Studio" class="barber-image">
+        </header>
+
+        <main>
+            <form id="reserva-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+
+                <button type="submit">Reservar Turno</button>
+            </form>
+
+            <!-- Mensaje de confirmación -->
+            <div id="mensaje-confirmacion" class="mensaje-confirmacion" style="display: none;">
+                <p>Gracias por agendar su turno.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
